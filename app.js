@@ -15,17 +15,6 @@ mongoose.connect(process.env.MONGOOSE_KEY, {
 app.use("/pizza",PizzaRouter)
 app.use("/menu",MenuRouter)
 app.use("/ingredientes",IngredienteRouter)
-
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
-app.get('/hola2', (req, res) => {
-    res.send('Hello World!')
-  })
-  
-  app.get('/hola', (req, res) => {
-    res.send('Hello World!')
-  })
   
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
