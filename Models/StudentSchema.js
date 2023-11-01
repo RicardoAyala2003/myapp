@@ -5,6 +5,7 @@ var AllStudentsSchema = mongoose.Schema;
 var StudentsSchema = new AllStudentsSchema({
   name: {
     type: String,
+    
     required: true,
   },
   age: {
